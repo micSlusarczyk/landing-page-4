@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
 
 :root {
+    --gray: hsl(0,0%,70%);
     --light-pink: hsl(321, 100%, 78%);
     --light-red: hsl(0, 100%, 63%);
     --pink: hsl(322, 100%, 66%);
@@ -81,4 +82,30 @@
 .heading__image{
     padding:6rem;
     width: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    padding:2rem 0;
+    width: 100%;
+}
+
+.stats{
+    display: inline-block;
+}
+
+.stats__img{
+    width: clamp(2rem,3rem,100%);
+}
+
+.stats__data{
+    font-size: 6rem;
+}
+
+.stats__description{
+    color: var(--gray);
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-top: 1rem;
 }

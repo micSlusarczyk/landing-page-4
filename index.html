@@ -9,6 +9,13 @@
             sizes="32x32"
             href="./images/favicon-32x32.png"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+            integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <link rel="stylesheet" href="./style.css" />
         <title>
             Frontend Mentor | Huddle landing page with curved sections
@@ -103,43 +110,66 @@
                 />
             </div>
             <div class="main__container main__container--community">
-              <div class="section section--community">
-                  <h3 class="section__title">Ready To Build Your Community?</h3>
-                  <button class="btn">Get Started For Free</button>
-              </div>
-          </div>
+                <div class="section section--community">
+                    <h3 class="section__title">
+                        Ready To Build Your Community?
+                    </h3>
+                    <button class="btn">Get Started For Free</button>
+                </div>
+            </div>
         </main>
-        <!-- 
-
-
-  
- 
-  
-  
-
-  
-  
-
-  
-  
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
-  vestibulum a, ultrices quis sem.
-  
-  Phone: +1-543-123-4567
-  example@huddle.com
-
-  Newsletter
-  To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
-  send you spam or pass on your email address
-
-  Subscribe
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer> -->
+        <footer class="footer">
+            <div class="about-us">
+                <img class="about-us__img" src="./images/logo.svg" alt="logo" ">
+                <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices
+                    quis sem.
+                </p>
+                <div>
+                    <img
+                        class="about-us__contact"
+                        src="./images/icon-phone.svg"
+                        alt="icon-phone"
+                    />
+                    Phone: +1-543-123-4567
+                </div>
+                <img
+                    class="about-us__contact"
+                    src="./images/icon-email.svg"
+                    alt="icon-email"
+                />
+                example@huddle.com
+                <div class="socials">
+                    <i
+                        class="fa fa-facebook-square socials__icon"
+                        aria-hidden="true"
+                    ></i>
+                    <i
+                        class="fa fa-instagram socials__icon"
+                        aria-hidden="true"
+                    ></i>
+                    <i
+                        class="fa fa-twitter-square socials__icon"
+                        aria-hidden="true"
+                    ></i>
+                </div>
+            </div>
+            <div class="newsletter">
+                <h4 class="newsletter__title">Newsletter</h4>
+                <p class="description">
+                    To recieve tips on how to grow your community, sign up to
+                    our weekly newsletter. We’ll never send you spam or pass on
+                    your email address
+                </p>
+                <input
+                    class="newsletter__input"
+                    type="email"
+                    name="e-mail"
+                    id="email"
+                />
+                <button class="btn newsletter__btn">Subsrcibe</button>
+            </div>
+        </footer>
     </body>
 </html>

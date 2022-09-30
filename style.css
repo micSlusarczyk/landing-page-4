@@ -276,7 +276,7 @@
     align-content: center;
     display: flex;
     flex-direction: row;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 .newsletter {

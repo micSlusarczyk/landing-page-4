@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
 
 :root {
+    --blue: hsl(207, 100%, 48%);
     --gray: hsl(0, 0%, 70%);
     --light-pink: hsl(321, 100%, 78%);
     --light-red: hsl(0, 100%, 63%);
@@ -27,7 +28,7 @@
 
 .nav__logo {
     height: auto;
-    width: clamp(200px, 240px, 100%);
+    width: clamp(100px, 240px, 30%);
 }
 
 .nav__btn {
@@ -105,7 +106,7 @@
 }
 
 .stats__img {
-    width: clamp(2rem, 3rem, 100%);
+    width: clamp(1rem, 3rem, 20%);
 }
 
 .stats__data {
@@ -123,7 +124,7 @@
     align-items: center;
     background-color: var(--very-pale-blue);
     display: flex;
-    gap: 8rem;
+    gap: 7rem;
     justify-content: center;
     flex-direction: row;
     margin: 7rem 0;
@@ -196,17 +197,18 @@
 }
 
 .container__img {
-    width: clamp(200px, 520px, 50%);
+    width: clamp(200px, 550px, 90%);
 }
 
 .footer {
-    align-items: center;
+    align-items: start;
     background-color: var(--very-dark-cyan);
     color: hsl(207, 100%, 98%);
     display: flex;
     justify-content: center;
     flex-direction: row;
     font-weight: 600;
+    gap: 8rem;
     margin-top: 7rem;
     padding: 7rem;
     position: relative;
@@ -222,7 +224,7 @@
     width: 100%;
 }
 
-.about-us{
+.about-us {
     display: flex;
     flex-direction: column;
 }
@@ -234,13 +236,189 @@
     width: clamp(150px, 200px, 100%);
 }
 
-.about-us__contact{
-    display: inline-block;
-    max-width: 2rem;
+.about-us__contact {
+    align-items: center;
+    display: flex;
+    font-weight: 400;
+    gap: 1rem;
+    margin-top: 0.5rem;
 }
 
-.description{
+.about-us__contact__img {
+    height: auto;
+    width: 1.1rem;
+}
+
+.description {
     font-family: "Open Sans", sans-serif;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 400;
+    line-height: 1.6rem;
+    margin: 1rem 0;
+    width: 67%;
+}
+
+.socials {
+    margin-top: 4rem;
+}
+
+.socials__icon {
+    font-size: 2.3rem;
+    margin-right: 1.3rem;
+}
+
+.socials__icon:hover {
+    color: var(--blue);
+    transition: all 0.5s ease-in-out;
+}
+
+.inputs {
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 8rem;
+}
+
+.newsletter__title {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.newsletter__input {
+    height: 100%;
+    margin-top: 2rem;
+    padding: 0.9rem;
+    width: 100%;
+}
+
+.newsletter__btn {
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+    padding: 0.9rem 3rem;
+    width: 100px;
+    height: auto;
+}
+@media screen and (max-width: 768px) {
+    .nav {
+        padding: 1.5rem;
+    }
+
+    .nav__btn {
+        border-width: 1px;
+        font-size: 0.6rem;
+        padding: 0.25rem 1rem;
+    }
+
+    .heading {
+        padding: 2rem;
+    }
+    .heading__title {
+        font-size: 1.5rem;
+    }
+    .heading__description {
+        padding: 2rem;
+    }
+
+    .heading__description {
+        font-size: 0.85rem;
+        padding: 2rem 0;
+        width: 100%;
+    }
+
+    .btn {
+        font-size: 0.85rem;
+        padding: 0.7rem 0;
+    }
+
+    .heading__image {
+        padding: 6rem 0;
+    }
+    .heading__container {
+        flex-direction: column;
+        gap: 7rem;
+        padding: 0 5rem;
+        text-align: center;
+    }
+
+    .stats {
+        text-align: left;
+    }
+
+    .stats__data {
+        font-size: 3.7rem;
+    }
+
+    .stats__description {
+        font-size: 0.85rem;
+        margin-top: 0;
+    }
+    .main__container {
+        flex-direction: column-reverse;
+        gap: 5rem;
+        padding: 4rem 2rem;
+    }
+    .main__container::before {
+        background: url("./images/bg-section-top-mobile-1.svg") no-repeat;
+        top: -12vh;
+    }
+    .main__container::after {
+        background: url("./images/bg-section-bottom-mobile-1.svg") no-repeat;
+        bottom: -20vh;
+    }
+    .main__container--background::before {
+        background: url("./images/bg-section-top-mobile-2.svg") no-repeat;
+    }
+
+    .main__container--background::after {
+        background: url("./images/bg-section-bottom-mobile-2.svg") no-repeat;
+    }
+    .section__title {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .section__description {
+        font-size: 0.85rem;
+        text-align: center;
+    }
+    .footer {
+        flex-direction: column-reverse;
+        gap: 5rem;
+        padding: 3rem 1.5rem;
+    }
+    .footer::before {
+        background: url("./images/bg-footer-top-mobile.svg") no-repeat;
+        top: -5vh;
+    }
+    .newsletter {
+        margin: 0;
+    }
+    .newsletter__title {
+        font-size: 1rem;
+    }
+
+    .newsletter__input {
+        margin-top: 1rem;
+    }
+    .newsletter__btn {
+        margin: 0;
+        width: 50%;
+    }
+    .description {
+        width: 100%;
+    }
+    .inputs {
+        align-items: flex-end;
+        flex-direction: column;
+        gap: 1rem;
+    }
 }

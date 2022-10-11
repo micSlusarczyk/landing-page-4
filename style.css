@@ -18,6 +18,11 @@
     padding: 0;
 }
 
+body{
+    margin: 0 auto;
+    max-width: 1440px;
+
+}
 .nav {
     display: flex;
     justify-content: space-between;
@@ -139,12 +144,12 @@
     left: 0;
     min-height: 20vh;
     position: absolute;
-    top: -17vh;
+    top: -16vh;
     width: 100%;
 }
 .main__container::after {
     background: url("./images/bg-section-bottom-desktop-1.svg") no-repeat;
-    bottom: -17vh;
+    bottom: -18vh;
     content: "";
     left: 0;
     min-height: 20vh;
@@ -220,7 +225,7 @@
     left: 0;
     min-height: 18vh;
     position: absolute;
-    top: -17vh;
+    top: -16vh;
     width: 100%;
 }
 
